@@ -6,7 +6,6 @@ from django.shortcuts import render
 from django.http import HttpRequest
 from django.template import RequestContext
 from datetime import datetime
-coding=utf-8
 
 def home(request):
     """Renders the home page."""
@@ -57,7 +56,7 @@ def cadastro_cursos(request):
         context_instance = RequestContext(request,
         {
             'title':'Cadastro de cursos',
-            'cursos': ['ADS' , 'Sistemas de Informação', 'Administração'],
+            'cursos': ['ADS' , 'Sistemas_de_Informação', 'Administração'],
             'year':datetime.now().year,
         })
     )
